@@ -1,0 +1,45 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 99;
+  top: 0;
+
+  div {
+    display: flex;
+    width: 73px;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex: auto;
+
+    li {
+      cursor: pointer;
+      align-items: center;
+      padding-left: 20px;
+      font-family: "Manrope", sans-serif;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:last-of-type {
+      justify-content: end;
+      text-transform: uppercase;
+    }
+
+    &:first-of-type {
+      padding-left: 20px;
+    }
+  }
+}
